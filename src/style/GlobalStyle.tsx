@@ -10,6 +10,16 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'Noto Sans KR', sans-serif;
   }
   
+  body {
+  font-weight: 300;
+  font-family: 'Source Sans Pro', sans-serif;
+  color:black;
+  color:${(props) => props.theme.white.darker};
+  line-height: 1.2;
+  
+  background-color: black;
+}
+
   a {
     text-decoration: none;
     color: ${({ theme }) => theme.white.lighter};
